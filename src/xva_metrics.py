@@ -1,4 +1,10 @@
+# Imports des bibliothèques standards
 import numpy as np
+
+# Imports de tes modules locaux (dans le dossier src)
+from src.models import MarketModel, CreditModel
+from src.engine import simulate_paths
+
 
 def compute_exposure(paths, strike):
     """Calcule l'exposition positive (MtM+) à chaque instant."""
